@@ -16,7 +16,10 @@ jobs:
       run: |
         git clone --depth 1  https://github.com/microsoft/vcpkg $HOME/vcpkg 
         cd $HOME/vcpkg 
-        bootstrap-vcpkg.bat
+        if: ${{ matrix.platform == 'windows-latest' }}
+          bootstrap-vcpkg.bat
+        else :
+          ./bootstrap-vcpkg.sh
 
     - name: Configure
       run: |
