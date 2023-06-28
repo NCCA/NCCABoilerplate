@@ -11,7 +11,7 @@ jobs:
 
     - name: install vcpkg
       run : |
-        git clone --depth 1  https://github.com/microsoft/vcpkg ~/vcpkg 
+        git clone --depth 1  https://github.com/microsoft/vcpkg $HOME/vcpkg  
         cd $HOME/vcpkg 
         bootstrap-vcpkg.bat
     - name: Configure
@@ -26,4 +26,4 @@ jobs:
         cmake --build . 
     - name: Test
       run: |
-        build/GTest/GTestBoilerPlate
+        build/GTest/GTestBoilerPlate.exe
