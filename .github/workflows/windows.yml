@@ -12,13 +12,13 @@ jobs:
     - name: install vcpkg
       run : |
         git clone --depth 1  https://github.com/microsoft/vcpkg ~/vcpkg 
-        cd ~/vcpkg 
-        ./bootstrap-vcpkg.bat
+        cd $HOME/vcpkg 
+        bootstrap-vcpkg.bat
     - name: Configure
       run: |
         mkdir build
         cd build
-        cmake -DCMAKE_TOOLCHAIN_FILE=~/vcpkg/scripts/buildsystems/vcpkg.cmake  -DVCPKG_MANIFEST_DIR=../manifest/ .. 
+        cmake -DCMAKE_TOOLCHAIN_FILE="$HOME/vcpkg/scripts/buildsystems/vcpkg.cmake"  -DVCPKG_MANIFEST_DIR=../manifest/ .. 
                
     - name: Build
       run: |
