@@ -12,21 +12,22 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: 'recursive'
-    - name: Run vcpkg
-      uses: lukka/run-vcpkg@v4
-      with:
-       vcpkgArguments: 'gtest'
+    - name: Install vcpkg
+      run: |
+        git clone --depth 1  https://github.com/microsoft/vcpkg $HOME/vcpkg 
+        cd $HOME/vcpkg 
+        bootstrap-vcpkg.bat
 
     - name: Configure
       run: |
         mkdir build
         cd build
         cmake -DCMAKE_TOOLCHAIN_FILE=~/vcpkg/scripts/buildsystems/vcpkg.cmake  -DVCPKG_MANIFEST_DIR=../manifest/ .. 
-               
+
     - name: Build
       run: |
         cd build
         cmake --build . 
-    - name: Test
-      run: |
+        - name: Test
+        run: |
         build/GTest/GTestBoilerPlate
