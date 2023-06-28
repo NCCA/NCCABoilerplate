@@ -1,7 +1,7 @@
 # NCCA Boilerplate
 
 
-[![NGL MacOS](https://github.com/NCCA/NCCABoilerplate/actions/workflows/linux-mac.yml/badge.svg)](https://github.com/NCCA/NCCABoilerplate/actions/workflows/linux-mac.yml)[![NGL MacOS](https://github.com/NCCA/NCCABoilerplate/actions/workflows/linux-mac.yml/badge.svg)](https://github.com/NCCA/NCCABoilerplate/actions/workflows/linux-mac.yml)
+[![Linux and Mac](https://github.com/NCCA/NCCABoilerplate/actions/workflows/linux-mac.yml/badge.svg)](https://github.com/NCCA/NCCABoilerplate/actions/workflows/linux-mac.yml)[![Windows CI Tests](https://github.com/NCCA/NCCABoilerplate/actions/workflows/windows.yml/badge.svg)](https://github.com/NCCA/NCCABoilerplate/actions/workflows/windows.yml)
 
 
 This repository contains simple [boiler plate](https://en.wikipedia.org/wiki/Boilerplate_code) projects for different things we teach across the NCCA. 
@@ -18,6 +18,8 @@ The top level of the repository contains the following:
 [CMakelists.txt](CMakeLists.txt) - This is the main cmake file that is used to build the projects. And is an example of a typical subdirectory project.
 
 [.gitignore](.gitignore) - This is a file that tells git what files to ignore when committing to the repository. This is useful for ignoring build files and other files that are not needed in the repository, this particular file is setup for C++ and Python projects.
+
+[manifest](./manifest/) this folder contains a vcpkg.json file that contains all the libs to be built for the projects. This is also used by the github actions in the [wokrflows](.github/workflows) directory. These basically builds each time we commit and generates the badges you see at the top to see if everything still builds.
 
 ### Building
 
