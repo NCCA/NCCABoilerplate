@@ -15,7 +15,7 @@ jobs:
     - name: Run vcpkg
       uses: lukka/run-vcpkg@v4
       with:
-       vcpkgJsonGlob: '**/vcpkg.json'
+       vcpkgArguments: 'gtest'
 
     - name: Configure
       run: |
