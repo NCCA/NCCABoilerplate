@@ -3,6 +3,7 @@
   "version-string": "9.0.0",
   "dependencies": [
     "gtest",
-    "fmt"
+    "fmt",
+    "bullet3"
   ]
 }
