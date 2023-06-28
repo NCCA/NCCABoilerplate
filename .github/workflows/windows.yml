@@ -26,4 +26,4 @@ jobs:
         cmake --build . 
     - name: Test
       run: |
-        build/GTest/GTestBoilerPlate.exe
+        build/GTest/Debug/GTestBoilerPlate.exe
