@@ -41,4 +41,5 @@ cmake --build build
 
 ## Subdirectories
 
+- [fmt](./fmt/) - This is a simple project that shows how to use the [fmt](https://fmt.dev/latest/index.html) library for formatting strings in C++
 - [GTest](./GTest/) - This is a simple project that shows how to use the [Google Test](https://github.com/google/googletest) library for developing unit tests. 
