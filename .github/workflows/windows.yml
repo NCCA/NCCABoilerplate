@@ -28,3 +28,4 @@ jobs:
       run: |
         build/GTest/Debug/GTestBoilerPlate.exe
         build/fmt/Debug/FMTBoilerPlate.exe
+        build/Bullet/Debug/BulletBoilerPlate.exe

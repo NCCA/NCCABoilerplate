@@ -30,3 +30,4 @@ jobs:
       run: |
         build/GTest/GTestBoilerPlate
         build/fmt/FMTBoilerPlate
+        build/Bullet/BulletBoilerPlate
