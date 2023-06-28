@@ -1,4 +1,4 @@
-name: NGL MacOS
+name: Linux Mac CI Tests 
 
 on: [push, pull_request]
 
