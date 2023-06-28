@@ -18,7 +18,7 @@ jobs:
       run: |
         mkdir build
         cd build
-        cmake -DCMAKE_TOOLCHAIN_FILE="$HOME/vcpkg/scripts/buildsystems/vcpkg.cmake"  -DVCPKG_MANIFEST_DIR=../manifest/ .. 
+        cmake -DCMAKE_TOOLCHAIN_FILE="$HOME/vcpkg/scripts/buildsystems/vcpkg.cmake"  -DVCPKG_MANIFEST_DIR="..\manifest\" .. 
                
     - name: Build
       run: |
