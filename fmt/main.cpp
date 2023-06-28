@@ -3,6 +3,7 @@
 #include <fmt/format.h>
 #include <fmt/ranges.h>
 #include <iostream>
+#include <vector>
 #include <cstdlib>
 
 auto main() -> int
