@@ -1,18 +1,20 @@
-name: NGL MacOS
+name: NCCABoilerplate
 
 on: [push, pull_request]
 
 jobs:
   build:
-    runs-on:  macos-latest
+    strategy:
+      matrix:
+        platform: [windows-latest, ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.platform }}
     steps:
-    - uses: actions/checkout@v2 
-    
-    - name: install vcpkg
-      run : |
-        git clone --depth 1  https://github.com/microsoft/vcpkg ~/vcpkg 
-        cd ~/vcpkg 
-        ./bootstrap-vcpkg.sh
+    - uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
+    - name: Run vcpkg
+      uses: lukka/run-vcpkg@v4
+
     - name: Configure
       run: |
         mkdir build
