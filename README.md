@@ -40,3 +40,5 @@ cmake --build build
 
 
 ## Subdirectories
+
+- [GTest](./GTest/) - This is a simple project that shows how to use the [Google Test](https://github.com/google/googletest) library for developing unit tests. 

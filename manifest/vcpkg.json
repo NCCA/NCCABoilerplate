@@ -2,6 +2,7 @@
   "name": "ngl",
   "version-string": "9.0.0",
   "dependencies": [
-    "gtest"
+    "gtest",
+    "fmt"
   ]
 }
