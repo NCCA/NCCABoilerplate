@@ -1,0 +1,28 @@
+name: NGL MacOS
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on:  macos-latest
+    steps:
+    - uses: actions/checkout@v2 
+    
+    - name: install vcpkg
+      run : |
+        git clone --depth 1  https://github.com/microsoft/vcpkg ~/vcpkg 
+        cd ~/vcpkg 
+        ./bootstrap-vcpkg.sh
+    - name: Configure
+      run: |
+        mkdir build
+        cd build
+        cmake -DCMAKE_TOOLCHAIN_FILE=~/vcpkg/scripts/buildsystems/vcpkg.cmake  -DVCPKG_MANIFEST_DIR=../manifest/ .. 
+               
+    - name: Build
+      run: |
+        cd build
+        cmake --build . 
+    - name: Test
+      run: |
+        build/GTest/GTestBoilerPlate
