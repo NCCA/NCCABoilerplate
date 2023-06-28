@@ -1,5 +1,9 @@
 # NCCA Boilerplate
 
+
+[![NGL MacOS](https://github.com/NCCA/NCCABoilerplate/actions/workflows/linux-mac.yml/badge.svg)](https://github.com/NCCA/NCCABoilerplate/actions/workflows/linux-mac.yml)[![NGL MacOS](https://github.com/NCCA/NCCABoilerplate/actions/workflows/linux-mac.yml/badge.svg)](https://github.com/NCCA/NCCABoilerplate/actions/workflows/linux-mac.yml)
+
+
 This repository contains simple [boiler plate](https://en.wikipedia.org/wiki/Boilerplate_code) projects for different things we teach across the NCCA. 
 
 All of these project will work fine in the linux labs without any extra installation of libraries and software as we have this all set up for you. Most will not work under the Windows labs as they are missing some of the libraries and software.
