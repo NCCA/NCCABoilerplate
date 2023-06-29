@@ -13,5 +13,6 @@ endif()
 project(NCCABoilerPlateAll)
 # for each subdirectory add the CMakeLists.txt file
 add_subdirectory(${PROJECT_SOURCE_DIR}/Bullet)
+add_subdirectory(${PROJECT_SOURCE_DIR}/glm)
 add_subdirectory(${PROJECT_SOURCE_DIR}/GTest)
 add_subdirectory(${PROJECT_SOURCE_DIR}/fmt)

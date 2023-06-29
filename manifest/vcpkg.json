@@ -4,6 +4,7 @@
   "dependencies": [
     "gtest",
     "fmt",
-    "bullet3"
+    "bullet3",
+    "glm"
   ]
 }
