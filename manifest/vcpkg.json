@@ -8,6 +8,8 @@
     "glm",
     "glew",
     "eigen3",
-    "sdl2"
+    "sdl2",
+    "glfw",
+    "gl3w"
   ]
 }
