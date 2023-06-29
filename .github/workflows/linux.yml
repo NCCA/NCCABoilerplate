@@ -1,0 +1,39 @@
+name: Linux  CI Tests 
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest]
+    runs-on:  ${{ matrix.platform }}
+    steps:
+    - uses: actions/checkout@v2 
+    
+    - name : add extra libs
+      run : |
+        sudo apt-get -y install libxinerama-dev libxcursor-dev xorg-dev libglu1-mesa-dev 
+
+    - name: install vcpkg
+      run : |
+        git clone --depth 1  https://github.com/microsoft/vcpkg ~/vcpkg 
+        cd ~/vcpkg 
+        ./bootstrap-vcpkg.sh
+    - name: Configure
+      run: |
+        mkdir build
+        cd build
+        cmake -DCMAKE_TOOLCHAIN_FILE=~/vcpkg/scripts/buildsystems/vcpkg.cmake  -DVCPKG_MANIFEST_DIR=../manifest/ .. 
+               
+    - name: Build
+      run: |
+        cd build
+        cmake --build . 
+    - name: Test
+      run: |
+        build/Bullet/BulletBoilerPlate
+        build/Eigen/EigenBoilerPlate
+        build/fmt/FMTBoilerPlate
+        build/glm/GLMBoilerPlate
+        build/GTest/GTestBoilerPlate
