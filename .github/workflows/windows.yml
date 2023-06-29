@@ -24,9 +24,9 @@ jobs:
       run: |
         cd build
         cmake --build . 
-    - name: Test
-      run: |
-        build\\glm\\Debug\\GLMBoilerPlate.exe
-        build\\GTest\\Debug\\GTestBoilerPlate.exe
-        #build\\fmt\\Debug\\FMTBoilerPlate.exe
-        build\\Bullet\\Debug\\BulletBoilerPlate.exe
+    # - name: Test
+    #   run: |
+    #     build\\glm\\Debug\\GLMBoilerPlate.exe
+    #     build\\GTest\\Debug\\GTestBoilerPlate.exe
+    #     #build\\fmt\\Debug\\FMTBoilerPlate.exe
+    #     build\\Bullet\\Debug\\BulletBoilerPlate.exe

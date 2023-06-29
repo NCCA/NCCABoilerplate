@@ -40,6 +40,9 @@ cmake --build build
 
 
 ## Subdirectories
-
+- [Bullet](./Bullet/) - This is a simple project that shows how to use the [Bullet](https://pybullet.org/wordpress/) physics library in C++
+- [Eigen](./Eigen/) - This is a simple project that shows how to use the [Eigen](https://eigen.tuxfamily.org/index.php?title=Main_Page) library for maths in C++
 - [fmt](./fmt/) - This is a simple project that shows how to use the [fmt](https://fmt.dev/latest/index.html) library for formatting strings in C++
-- [GTest](./GTest/) - This is a simple project that shows how to use the [Google Test](https://github.com/google/googletest) library for developing unit tests. 
+- [GTest](./GTest/) - This is a simple project that shows how to use the 
+-[glm](./glm) - This is a simple project that shows how to use the [glm](https://glm.g-truc.net/0.9.9/index.html) library for maths in C++
+- [Google Test](https://github.com/google/googletest) library for developing unit tests. 

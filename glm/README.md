@@ -1,11 +1,5 @@
-# FMT example
+# GLM example
 
-This demo uses the fmt library to print out a string. [{fmt}](https://fmt.dev/latest/index.html) is an open-source formatting library providing a fast and safe alternative to C stdio and C++ iostreams.
+This demo show how to use the [glm](https://glm.g-truc.net/0.9.9/index.html) library for maths in C++. It is basically a cpu implementation of the GLSL maths library. It is very useful for doing maths in OpenGL and Vulkan applications before passing this data to the GPU. 
 
-It is similar to the python print function and is very fast easy to use. 
-
-We install this via vcpkg for now and it can be used either as a header only version or with a pre-compiled library.
-
-C++ 20 will introduce a [formatting library](https://en.cppreference.com/w/cpp/utility/format) but this is not available yet in the compilers we use so this is an easy way to future proof. 
-
-
+It can also be used to replicate a number of function we need for 3D graphics such as lookAt, perspective and orthographic projection matrices.
