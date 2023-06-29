@@ -6,7 +6,6 @@ endif()
 # our project name
 project(SDLPutPixelExample)
 # Now find the fmt library
-find_package(fmt CONFIG REQUIRED)
 find_package(SDL2 CONFIG REQUIRED)
 # Set to C++ 17
 set(CMAKE_CXX_STANDARD 17)
@@ -15,5 +14,5 @@ set(CMAKE_CXX_EXTENSIONS ON)
 
 add_executable(PutPixel)
 target_sources(PutPixel PRIVATE main.cpp )
-target_link_libraries(PutPixel PRIVATE fmt::fmt SDL2::SDL2 SDL2::SDL2main )
+target_link_libraries(PutPixel PRIVATE  SDL2::SDL2 SDL2::SDL2main )
 

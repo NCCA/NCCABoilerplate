@@ -12,3 +12,4 @@ endif()
 # Name of the project
 project(SDLDemosAll)
 add_subdirectory(PutPixel)
+add_subdirectory(OpenGL2.0)
