@@ -1,8 +1,7 @@
 # NCCA Boilerplate
 
 
-[![Linux and Mac](https://github.com/NCCA/NCCABoilerplate/actions/workflows/linux-mac.yml/badge.svg)](https://github.com/NCCA/NCCABoilerplate/actions/workflows/linux-mac.yml)[![Windows CI Tests](https://github.com/NCCA/NCCABoilerplate/actions/workflows/windows.yml/badge.svg)](https://github.com/NCCA/NCCABoilerplate/actions/workflows/windows.yml)
-
+[![Mac CI Tests](https://github.com/NCCA/NCCABoilerplate/actions/workflows/mac.yml/badge.svg)](https://github.com/NCCA/NCCABoilerplate/actions/workflows/mac.yml)[![Linux  CI Tests](https://github.com/NCCA/NCCABoilerplate/actions/workflows/linux.yml/badge.svg)](https://github.com/NCCA/NCCABoilerplate/actions/workflows/linux.yml)[![Windows CI Tests](https://github.com/NCCA/NCCABoilerplate/actions/workflows/windows.yml/badge.svg)](https://github.com/NCCA/NCCABoilerplate/actions/workflows/windows.yml)
 
 This repository contains simple [boiler plate](https://en.wikipedia.org/wiki/Boilerplate_code) projects for different things we teach across the NCCA. 
 

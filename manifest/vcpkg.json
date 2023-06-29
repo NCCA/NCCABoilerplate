@@ -6,6 +6,7 @@
     "fmt",
     "bullet3",
     "glm",
+    "glew",
     "eigen3",
     "sdl2"
   ]
