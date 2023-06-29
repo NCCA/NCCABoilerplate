@@ -28,6 +28,7 @@ jobs:
         cmake --build . 
     - name: Test
       run: |
+        build/glm/GLMBoilerPlate
         build/GTest/GTestBoilerPlate
         build/fmt/FMTBoilerPlate
         build/Bullet/BulletBoilerPlate
