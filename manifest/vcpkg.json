@@ -1,5 +1,5 @@
 {
-  "name": "NCCADemos",
+  "name": "ncca-demos",
   "version-string": "1.0.0",
   "dependencies": [
     "gtest",
