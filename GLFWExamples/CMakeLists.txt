@@ -12,3 +12,4 @@ endif()
 # Name of the project
 project(GLFW3DemosAll)
 add_subdirectory(Offline)
+add_subdirectory(OpenGL2.0)
