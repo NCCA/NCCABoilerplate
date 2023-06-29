@@ -45,3 +45,4 @@ cmake --build build
 - [fmt](./fmt/) - This is a simple project that shows how to use the [fmt](https://fmt.dev/latest/index.html) library for formatting strings in C++
 - [GTest](./GTest/) - This is a simple project that shows how to use the 
 -[glm](./glm) - This is a simple project that shows how to use the [glm](https://glm.g-truc.net/0.9.9/index.html) library for maths in C++
+- [SDLExamples](./SDLExamples/) - A Number of examples of using SDL2 in C++ see the README.md in the directory for more details.

@@ -10,11 +10,5 @@ if(NOT DEFINED CMAKE_TOOLCHAIN_FILE AND DEFINED ENV{CMAKE_TOOLCHAIN_FILE})
 endif()
 
 # Name of the project
-project(NCCABoilerPlateAll)
-# for each subdirectory add the CMakeLists.txt file
-add_subdirectory(${PROJECT_SOURCE_DIR}/Bullet)
-add_subdirectory(${PROJECT_SOURCE_DIR}/Eigen)
-add_subdirectory(${PROJECT_SOURCE_DIR}/glm)
-add_subdirectory(${PROJECT_SOURCE_DIR}/GTest)
-add_subdirectory(${PROJECT_SOURCE_DIR}/fmt)
-add_subdirectory(${PROJECT_SOURCE_DIR}/SDLExamples)
+project(SDLDemosAll)
+add_subdirectory(PutPixel)

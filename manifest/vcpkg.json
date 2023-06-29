@@ -6,6 +6,7 @@
     "fmt",
     "bullet3",
     "glm",
-    "eigen3"
+    "eigen3",
+    "sdl2"
   ]
 }
