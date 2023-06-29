@@ -24,7 +24,9 @@ auto main() -> int
     std::uniform_int_distribution<> width_dist(0, WindowWidth - 1);
     std::uniform_int_distribution<> height_dist(0, WindowHeight - 1);
     // create a distribution to produce our colour range
-    std::uniform_int_distribution<unsigned char> colour_dist(0, 255);
+    // note windows does not allow an unsigned char dist see
+    // https://stackoverflow.com/questions/31460733/why-arent-stduniform-int-distributionuint8-t-and-stduniform-int-distri
+    std::uniform_int_distribution<unsigned short> colour_dist(0, 255);
     SDL_Init(SDL_INIT_VIDEO);
     SDL_CreateWindowAndRenderer(WindowWidth, WindowHeight, 0, &window, &renderer);
     SDL_SetWindowTitle(window, "Put Pixel");
