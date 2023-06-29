@@ -1,5 +1,5 @@
 {
-  "name": "Libs",
+  "name": "NCCADemos",
   "version-string": "1.0.0",
   "dependencies": [
     "gtest",
