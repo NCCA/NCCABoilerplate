@@ -9,7 +9,7 @@
     "glew",
     "eigen3",
     "sdl2",
-    "glfw",
+    "glfw3",
     "gl3w"
   ]
 }
