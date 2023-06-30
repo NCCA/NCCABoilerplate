@@ -13,6 +13,7 @@
     "gl3w",
     "openimageio",
     "catch2",
-    "tbb"
+    "tbb",
+    "cxxopts"
   ]
 }
