@@ -90,8 +90,8 @@ void main()
 }
 )";
 
-  // some source for our fragment shader
-  const std::string fragment = R"(
+// some source for our fragment shader
+const std::string fragment = R"(
 #version 400 core
 in vec3 vertColour;
 in vec3 normal;
