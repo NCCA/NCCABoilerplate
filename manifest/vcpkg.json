@@ -12,6 +12,7 @@
     "glfw3",
     "gl3w",
     "openimageio",
-    "catch2"
+    "catch2",
+    "tbb"
   ]
 }

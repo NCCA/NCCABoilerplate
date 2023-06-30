@@ -46,5 +46,8 @@ cmake --build build
 - [glm](./glm) - This is a simple project that shows how to use the [glm](https://glm.g-truc.net/0.9.9/index.html) library for maths in C++
 - [GLFWExamples](./GLFWExamples/) - A Number of examples of using GLFW in C++ see the README.md in the directory for more details.
 - [MayaAPI](./MayaAPI/) - This is a simple project that shows how to use the Maya API in C++ and Python
+- [OpenImageIO](./OpenImageIO/) - This is a simple project that shows how to use the [OpenImageIO](https://openimageio.readthedocs.io/en/latest/) library for image IO in C++
 
 - [SDLExamples](./SDLExamples/) - A Number of examples of using SDL2 in C++ see the README.md in the directory for more details.
+
+- [TBB][./TBB] - A simple example using the [Intel TBB](https://www.threadingbuildingblocks.org/) library for threading in C++

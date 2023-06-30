@@ -19,6 +19,8 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/GTest)
 add_subdirectory(${PROJECT_SOURCE_DIR}/fmt)
 add_subdirectory(${PROJECT_SOURCE_DIR}/OpenImageIO)
 add_subdirectory(${PROJECT_SOURCE_DIR}/SDLExamples)
+add_subdirectory(${PROJECT_SOURCE_DIR}/TBB)
+
 add_subdirectory(${PROJECT_SOURCE_DIR}/GLFWExamples)
 
 # These projects are excluded from the github actions
