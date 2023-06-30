@@ -19,3 +19,9 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/GTest)
 add_subdirectory(${PROJECT_SOURCE_DIR}/fmt)
 add_subdirectory(${PROJECT_SOURCE_DIR}/SDLExamples)
 add_subdirectory(${PROJECT_SOURCE_DIR}/GLFWExamples)
+
+# These projects are excluded from the github actions
+# as they need extra software to be installed
+if  (NOT ON_CI)
+  add_subdirectory(${PROJECT_SOURCE_DIR}/MayaAPI)
+endif()

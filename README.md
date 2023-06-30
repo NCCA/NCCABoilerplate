@@ -45,4 +45,6 @@ cmake --build build
 - [GTest](./GTest/) - This is a simple project that shows how to use the GTest library for unit testing in C++
 - [glm](./glm) - This is a simple project that shows how to use the [glm](https://glm.g-truc.net/0.9.9/index.html) library for maths in C++
 - [GLFWExamples](./GLFWExamples/) - A Number of examples of using GLFW in C++ see the README.md in the directory for more details.
+- [MayaAPI](./MayaAPI/) - This is a simple project that shows how to use the Maya API in C++ and Python
+
 - [SDLExamples](./SDLExamples/) - A Number of examples of using SDL2 in C++ see the README.md in the directory for more details.
