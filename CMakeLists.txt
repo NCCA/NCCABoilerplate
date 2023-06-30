@@ -17,6 +17,7 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/Eigen)
 add_subdirectory(${PROJECT_SOURCE_DIR}/glm)
 add_subdirectory(${PROJECT_SOURCE_DIR}/GTest)
 add_subdirectory(${PROJECT_SOURCE_DIR}/fmt)
+add_subdirectory(${PROJECT_SOURCE_DIR}/OpenImageIO)
 add_subdirectory(${PROJECT_SOURCE_DIR}/SDLExamples)
 add_subdirectory(${PROJECT_SOURCE_DIR}/GLFWExamples)
 

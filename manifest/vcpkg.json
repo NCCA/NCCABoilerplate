@@ -10,6 +10,8 @@
     "eigen3",
     "sdl2",
     "glfw3",
-    "gl3w"
+    "gl3w",
+    "openimageio",
+    "catch2"
   ]
 }
