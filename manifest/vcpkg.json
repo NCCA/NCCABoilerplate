@@ -15,5 +15,6 @@
     "catch2",
     "tbb",
     "cxxopts"
+    "matplotlib-cpp"
   ]
 }

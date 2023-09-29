@@ -50,4 +50,4 @@ cmake --build build
 
 - [SDLExamples](./SDLExamples/) - A Number of examples of using SDL2 in C++ see the README.md in the directory for more details.
 
-- [TBB][./TBB] - A simple example using the [Intel TBB](https://www.threadingbuildingblocks.org/) library for threading in C++
+- [TBB][./TBB/] - A simple example using the [Intel TBB](https://www.threadingbuildingblocks.org/) library for threading in C++

@@ -39,8 +39,7 @@ void loadImage(const std::string &_fname)
   REQUIRE(spec.height == HEIGHT);
   REQUIRE(spec.nchannels == 3);
 
-  in->read_image(TypeDesc::UINT8, pixels.get());
-
+  in->read_image(0,0,0,-1,TypeDesc::UINT8, pixels.get());
   if (_fname != "test.jpg")
   {
     // test pixels to be honest this is a bit crap but hey
