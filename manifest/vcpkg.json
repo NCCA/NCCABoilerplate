@@ -14,7 +14,7 @@
     "openimageio",
     "catch2",
     "tbb",
-    "cxxopts"
+    "cxxopts",
     "matplotlib-cpp"
   ]
 }
