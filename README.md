@@ -30,13 +30,19 @@ cmake -G Ninja -B build -S .
 
 The ```-G``` flag indicates the build system to use, in this case Ninja. The ```-B``` flag indicates the build directory to use, in this case build. The ```-S``` flag indicates the source directory to use, in this case the current directory.
 
+If you are building at home and with to use the manifest mode to download and install the libraries into the current project you can use the following
+
+```
+cmake -DVCPKG_MANIFEST_DIR=./manifest/ -G Ninja -B build -S . 
+```
+
+This may take a while to download and build all the libraries, and if you are planning on using them in other projects I would suggest installing to you system vcpkg directory using the typical method.
+
 Then to build the project run the following:
 
 ```bash
-
 cmake --build build
 ```
-
 
 ## Subdirectories
 - [Bullet](./Bullet/) - This is a simple project that shows how to use the [Bullet](https://pybullet.org/wordpress/) physics library in C++
